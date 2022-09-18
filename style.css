@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.global-container {
+    background-image: url(assets/bg-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: calc(98vw + 9px); */
+    height: auto;
+    padding: 50px 50px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.147);
+    filter: blur(10x);
+}
+
+.call-img {
+    float: left;
+    width: 50px;
+    margin-left: -60px;
+    background: #fff;
+    /* border-radius: 50%; */
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+nav ul li:last-child {
+    margin-left: 70px;
+}
+
+
+header img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-left h1 {
+    font-size: 60px;
+    width: 45vw;
+    margin-right: -100px;
+    margin-left: 100px;
+    margin-top: 150px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.container-left button {
+    width: 200px;
+    height: 60px;
+    background: transparent;
+    border: 3px solid #fff;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 250px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.147);
+    filter: blur(10x);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-right-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 220px;
+}
+
+.rect1 {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.147);
+    filter: blur(10x);
+}
+
+.st-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.st {
+    height: 80px;
+    width: 1px;
+    background: #fff;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+.container-right-two{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.rect2 {
+    width: 300px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.147);
+    filter: blur(10x);
+}
+
+.st2-circle2 {
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.st2 {
+    width: 80px;
+    height: 1px;
+    background: #fff;
+}
+
+.circle2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.puzzle {
+    width: 40px;
+    margin-left: -10px;
+}
+
+.bulb {
+    width: 70px;
+    margin-top: 5px;
+}
+
+.icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background: #fff;
+}
+
+.small-heading {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+@media (max-width:800px) {
+    nav {
+        display: none;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-left h1 {
+        font-size: 28px;
+        width: 80vw;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    .container-left button {
+        width: 160px;
+        height: 60px;
+        background: transparent;
+        border: 3px solid #fff;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .container-right-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+
+    .global-container {
+        height: auto;
+        padding: 20px 20px;
+    }
+
+    .st2 {
+        width: 40px;
+    }
+
+}
+
+@media screen and (min-width:801px) {
+    .menubar {
+        display: none;
+    }
+}
